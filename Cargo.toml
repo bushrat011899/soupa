@@ -1,0 +1,18 @@
+[package]
+name = "soupa"
+version = "1.0.0-rc1"
+edition = "2015"
+rust-version = "1.16.0"
+description = "Provides a macro allowing expressions to be eagerly evaluated before a scope."
+repository = "https://github.com/bushrat011899/soupa"
+license = "MIT OR Apache-2.0"
+keywords = ["no_std", "no_alloc", "macro"]
+categories = ["no-std", "no-std::no-alloc", "rust-patterns"]
+exclude = [".github"]
+
+[dev-dependencies]
+macrotest = { version = "1.2.0" }
+
+[package.metadata.docs.rs]
+rustdoc-args = ["-Zunstable-options", "--generate-link-to-definition"]
+all-features = true
