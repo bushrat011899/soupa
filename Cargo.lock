@@ -138,7 +138,7 @@ dependencies = [
 
 [[package]]
 name = "soupa"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "macrotest 1.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
