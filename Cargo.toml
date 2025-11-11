@@ -1,6 +1,6 @@
 [package]
 name = "soupa"
-version = "1.0.0-rc1"
+version = "1.0.0"
 edition = "2015"
 rust-version = "1.16.0"
 description = "Provides a macro allowing expressions to be eagerly evaluated before a scope."
