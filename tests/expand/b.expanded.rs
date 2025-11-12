@@ -6,9 +6,9 @@ use std::sync::Arc;
 fn test_body() {
     let foo = Arc::new(123usize);
     let func = {
-        let __soupa_temp__a = { foo.clone() };
+        let __soupa_temp_a = { foo.clone() };
         move || {
-            let foo = { { __soupa_temp__a } };
+            let foo = { { __soupa_temp_a } };
             *foo
         }
     };

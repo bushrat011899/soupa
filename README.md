@@ -14,7 +14,7 @@ This can be thought of as the dual of `defer` in languages like [Zig](https://zi
 
 As an example, consider an `Arc` you want to use inside a closure.
 
-```ignore,rust
+```ignore
 let foo = Arc::new(/* Some expensive resource */);
 
 let func = move || {
@@ -30,7 +30,7 @@ lose access to the original because it was moved.
 The typical way to avoid this is to simply clone items _before_ the closure
 is created.
 
-```ignore,rust
+```ignore
 let foo = Arc::new(/* Some expensive resource */);
 
 let func = {
@@ -46,7 +46,7 @@ some_more_operations(foo); // Ok!
 This crate automates this process by allowing expressions within `super { ... }`
 blocks to be automatically lifted to the parent scope and assigned to a variable.
 
-```ignore,rust
+```ignore
 let foo = Arc::new(/* Some expensive resource */);
 
 let func = soupa! {
